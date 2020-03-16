@@ -1,2 +1,2 @@
-# jquery plugin
- 
+# Jquery Plugin
+ Jquery Plug in
