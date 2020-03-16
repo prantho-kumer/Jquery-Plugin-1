@@ -10,6 +10,8 @@
     <!-- plugins -->
     <link rel="stylesheet" href="assets/tiltedpage_scroll-master/tiltedpage-scroll.css">
     <!-- /   tiltedpage -->
+    <link rel="stylesheet" href="assets/animsition-master/dist/css/animsition.min.css">
+    <!-- /   animation.css -->
 
     <!-- CSS links -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -19,7 +21,22 @@
     <title>Hello, world!</title>
 </head>
 
-<body>
+<body class="animsition-overlay" data-animsition-overlay="true">
+    <!-- animation -->
+    <div class="container">
+        <div class="animition">
+            <a href="index.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-top"
+                data-animsition-out-duration="2000">
+                home
+            </a>
+
+            <a href="contact.html" class="animsition-link" data-animsition-out-class="fade-out"
+                data-animsition-out-duration="500">
+                contact
+            </a>
+        </div>
+    </div>
+
     <div class="container text-center">
         <div class="row">
             <div class="col">
@@ -51,6 +68,16 @@
                             <img class="img-fluid" src="images/demo2.jpg" alt="images">
                         </section>
 
+                        <section class="page3 mb-3">
+                            <img class="img-fluid" src="images/demo3.jpg" alt="images">
+                        </section>
+                        <section class="page4 mb-3">
+                            <img class="img-fluid" src="images/demo1.jpg" alt="images">
+                        </section>
+                        <section class="page5 mb-3">
+                            <img class="img-fluid" src="images/demo2.jpg" alt="images">
+                        </section>
+
                         <section class="last-page mb-3">
                             <img class="img-fluid" src="images/demo3.jpg" alt="images">
                         </section>
@@ -65,6 +92,7 @@
 
 
 
+
     <!-- js links -->
     <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
     <script src="js/jquery.min.js"></script>
@@ -75,6 +103,8 @@
     <!-- / counter -->
     <script src="assets/tiltedpage_scroll-master/jquery.tiltedpage-scroll.min.js"></script>
     <!-- /   tiltedpage -->
+    <script src="assets/animsition-master/dist/js/animsition.min.js"></script>
+    <!-- / animation.js -->
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
