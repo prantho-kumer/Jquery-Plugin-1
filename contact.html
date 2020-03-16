@@ -21,25 +21,69 @@
     <title>Hello, world!</title>
 </head>
 
-<body class="animsition" data-animation-in-class="Fade" data-animsition-in-duration="1000"
-    data-animsition-out-class="fade-out" data-animsition-out-duration="800">
+<body class="animsition-overlay" data-animsition-overlay="true">
 
     <!-- animation -->
     <div class="container ">
-        <div class="animsition">
-            <a href="index.html" class="animsition-link" data-animsition-out-class="fade-out-bottom"
-                data-animsition-out-duration="2000">
-                home
-            </a>
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <a href="contact.html" class="animsition-link" data-animsition-out-class="fade-out"
-                data-animsition-out-duration="500">
-                contact
-            </a>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto animsition">
+                    <li class="nav-item active ">
+                        <a class="nav-link animsition-link" data-animsition-out-class="overlay-slide-out-top"
+                            data-animsition-out-duration="2000" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link animsition-link" data-animsition-out-class="overlay-slide-out-top"
+                            data-animsition-out-duration="2000" href="contact.html">contact</a>
+                    </li>
+                </ul>
+
+        </nav>
+        <!-- nav -->
     </div>
-    <img src="images/demo1.jpg" alt="">
+    <section>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h4 class="sub_heading text-secondary">Jquery tilted plug in</h4>
+                    <!-- content -->
+                    <!-- tilted page -->
+                    <div class="main">
+                        <section class="page1 mb-3">
+                            <img class="img-fluid" src="images/demo1.jpg" alt="images">
+                        </section>
+                        <section class="page2 mb-3">
+                            <img class="img-fluid" src="images/demo2.jpg" alt="images">
+                        </section>
 
+                        <section class="page3 mb-3">
+                            <img class="img-fluid" src="images/demo3.jpg" alt="images">
+                        </section>
+                        <section class="page4 mb-3">
+                            <img class="img-fluid" src="images/demo1.jpg" alt="images">
+                        </section>
+                        <section class="page5 mb-3">
+                            <img class="img-fluid" src="images/demo2.jpg" alt="images">
+                        </section>
+
+                        <section class="last-page mb-3">
+                            <img class="img-fluid" src="images/demo3.jpg" alt="images">
+                        </section>
+                    </div>
+                    <!-- /   tilted page -->
+                    <!-- /   content -->
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
